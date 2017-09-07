@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_title"  android:layout_width="match_parent" android:layout_height="wrap_content"
+        			android:layout_alignParentTop="true">
+        <TextView   android:id="@+id/tv_groupname" android:layout_width="match_parent" android:layout_height="wrap_content"
+            		android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+            		android:gravity="center" android:text="@string/hello_world"/>
+        <Button
+               android:id="@+id/btn_set"
+               android:layout_alignParentLeft="true"
+               android:layout_width="40dp"
+               android:layout_height="40dp" 
+               style="@style/MPButton.btnTitleMore"/>
+    </RelativeLayout>
+    <LinearLayout  android:id="@+id/ll_division" android:layout_width="match_parent" android:layout_height="1dp" 
+        		   android:layout_below="@id/rl_title"
+	    		   android:background="@color/color_gray"/>
+	<ListView android:id="@+id/lv_smslistall"  android:layout_below="@id/ll_division"
+	    	  android:layout_width="match_parent" android:layout_height="match_parent"
+    		  android:scrollingCache="true" android:cacheColorHint="#00000000"
+						android:fastScrollEnabled="true" android:focusable="false" android:divider="@null" 
+			   			android:listSelector="@android:color/transparent">
+	    	
+	</ListView>
+	<LinearLayout android:id="@+id/ll_groupSetParent" android:layout_width="150dp" android:layout_height="wrap_content"
+	   			  android:visibility="gone" android:background="@color/color_gray_ana"
+	    		  android:layout_alignParentLeft="true" android:layout_below="@id/rl_title"  android:orientation="vertical">
+	    <LinearLayout  android:id="@+id/ll_groupSet" android:layout_width="match_parent" android:layout_height="wrap_content">
+        </LinearLayout>
+        <Button
+               android:id="@+id/btn_addGroup"
+               android:layout_width="match_parent"
+               android:layout_height="40dp" 
+               android:gravity="left"
+               android:text="@string/btn_addgroup"
+               style="@style/MPButton"/>
+	</LinearLayout>
+	
+ 
+	
+</RelativeLayout>

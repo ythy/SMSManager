@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/tv_PhoneNumber"  android:layout_width="wrap_content" 
+    		   android:layout_height="wrap_content" android:singleLine="true"
+    		   android:layout_alignParentTop="true"  android:layout_alignParentLeft="true"
+    		   android:layout_marginLeft="@dimen/smsListMarginBorder"  android:layout_marginRight="@dimen/smsListMarginBorder" />
+    
+	<TextView android:id="@+id/tv_Date"  android:layout_width="wrap_content" 
+    		   android:layout_height="wrap_content" android:singleLine="true"
+    		   android:layout_alignParentTop="true"  android:layout_toRightOf="@id/tv_PhoneNumber"
+    		   android:layout_marginLeft="@dimen/smsListMarginBorder"  />
+	
+	<TextView android:id="@+id/tv_Smsbody"  android:layout_width="match_parent" 
+    		  android:layout_height="wrap_content"
+    		  android:layout_below="@id/tv_PhoneNumber"
+    		  android:layout_marginBottom="@dimen/smsListMarginBorder"
+    		  android:layout_marginLeft="@dimen/smsListMarginBorder"  android:layout_marginRight="@dimen/smsListMarginBorder"  />
+	<LinearLayout  android:layout_width="match_parent" android:layout_height="1dp" 
+	    		android:layout_below="@id/tv_Smsbody"
+	    		   android:background="@color/color_gray"/>
+</RelativeLayout>
